@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions</title>
+        <link rel="stylesheet" href="/CSS/suggestions.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="/./JS/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="d-flex flex-wrap justify-content-between align-items-center text-center px-4 py-3">
+    <div class="flex-grow-1 text-start mb-2 mb-md-0">
+      <img src="/./IMAGES/Logo.png" style="width: 200px; height: auto;" />
+    </div>
+    <div class="flex-grow-1 mb-2 mb-md-0">
+      <a href="./home.html" class="text-decoration-none">
+        <p class="mb-0 fw-bold">Home</p>
+      </a>
+    </div>
+    <div class="flex-grow-1 text-end">
+      <a href="./clothes.html" class="text-decoration-none">
+        <p class="mb-0 fw-bold">Clothes</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text"
+      >Naam en Achternaam <span class="text-danger">*</span></span
+    >
+    <input type="text" aria-label="First name" class="form-control" required />
+    <input type="text" aria-label="Last name" class="form-control" required />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text"
+      >Telefoonnummer <span class="text-danger">*</span></span
+    >
+    <input
+      type="text"
+      class="form-control"
+      aria-label="Phone number"
+      required
+    />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1"
+      >E-mail <span class="text-danger">*</span></span
+    >
+    <input
+      type="email"
+      class="form-control"
+      placeholder="naam@gmail.com"
+      aria-label="Email"
+      aria-describedby="basic-addon1"
+      required
+    />
+  </div>
+
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01"
+      >Stad <span class="text-danger">*</span></label
+    >
+    <select class="form-select" id="inputGroupSelect01" required>
+      <option value="" disabled selected>Kiez</option>
+      <option value="1">Rotterdam</option>
+      <option value="2">Den Haag</option>
+      <option value="3">Utrecht</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Adres <span class="text-danger">*</span></span>
+    <input type="text" class="form-control" required />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">With textarea</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="d-grid gap-2">
+    <button type="submit" class="btn btn-primary btn-lg">Verzenden</button>
+  </div>
+</div>
+
+</body>
+</html>
